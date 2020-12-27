@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: app
-          image: kudis
-          imagePullPolicy: Never
+          image: saphidev/kudis:2.0.0
+          imagePullPolicy: Always
           ports:
             - containerPort: 5000
           env:
