@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   </head>
   <body>
-    <h2>hello</h2>
+    <h2>CHAT <%= title %> from <%= pod %></h2>
 
     <form>
       <label>message</label>
@@ -17,17 +17,15 @@
       <button type="submit">send</button>
     </form>
 
-    <ul id="list">
-
-    </ul>
+    <ul id="list"></ul>
 
     <script>
- let list = []
+      let list = [];
 
-const updateList =()=>{
-    $("#list").html(list.map(item=>`<li>${item}</li>`).join(""))
-}
-       
+      const updateList = () => {
+        $("#list").html(list.map((item) => `<li>${item}</li>`).join(""));
+      };
+
       let socket = io();
 
       $("form").submit(function (e) {
@@ -37,13 +35,10 @@ const updateList =()=>{
         return false;
       });
 
-
-      socket.on("message",message=>{
-
-        list.push(message)
-        updateList()
-
-      })
+      socket.on("message", (message) => {
+        list.push(message);
+        updateList();
+      });
     </script>
   </body>
 </html>
