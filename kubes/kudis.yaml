@@ -29,6 +29,7 @@ kind: Service
 metadata:
   name: kudis
 spec:
+  sessionAffinity: ClientIP
   selector:
     app: kudis
   ports:
