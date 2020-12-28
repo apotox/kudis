@@ -35,4 +35,13 @@ spec:
   ports:
     - port: 80
       targetPort: 5000
-  type: LoadBalancer
+  type: NodePort
+---
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: basic-ingress
+spec:
+  backend:
+    serviceName: kudis
+    servicePort: 80
