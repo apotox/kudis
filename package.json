@@ -1,13 +1,13 @@
 {
   "name": "kudis",
   "version": "1.0.0",
-  "description": "",
+  "description": "KUDIS! simple chat app using redis adapter for socketio to make it scalable on a kubernetes cluster",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["socketio","k8s","redis","google","gke"],
+  "author": "safi eddine bouhentala",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.5",

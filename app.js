@@ -14,7 +14,7 @@ app.engine("html", require("ejs").renderFile);
 app.get("/", require("./routes").home);
 
 const server = app.listen(port, () => {
-  console.log("app started listing to ", port);
+  console.log("app started listning to ", port);
 });
 
 const io = socketio(server, {
