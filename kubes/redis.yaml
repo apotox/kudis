@@ -1,3 +1,4 @@
+#internal service to expose redis to other services
 apiVersion: v1
 kind: Service
 metadata:

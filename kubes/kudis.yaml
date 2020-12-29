@@ -1,9 +1,10 @@
+#the nodejs app deployment
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: kudis
 spec:
-  replicas: 2
+  replicas: 2 #scale
   selector:
     matchLabels:
       app: kudis
@@ -14,7 +15,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: saphidev/kudis:2.0.0
+          image: saphidev/kudis:2.0.0 #docker image from hub.docker.com/saphidev
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
