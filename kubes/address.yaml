@@ -1,6 +1,7 @@
-# apiVersion: compute.googleapis.com
-# kind: ComputeAddress
-# metadata:
-#   name: kudis-ip
-# spec:
-#   location: global
+apiVersion: compute.cnrm.cloud.google.com/v1beta1
+kind: ComputeAddress
+metadata:
+  name: kudis-ip
+spec:
+  location: global
+  description: kudis global address
