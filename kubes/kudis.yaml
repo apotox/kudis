@@ -32,7 +32,7 @@ spec:
   timeoutSec: 40
   sessionAffinity:
     affinityType: "GENERATED_COOKIE"
-    affinityCookieTtlSec: 0
+    affinityCookieTtlSec: 0 #delete cookies when browser closed
 ---
 apiVersion: v1
 kind: Service
