@@ -1,5 +1,9 @@
 #!/bin/bash
 #create service account
+
+# $1 ==> serviceName
+# $2 ==> your projectId
+
 gcloud iam service-accounts create $1
 #give it permissions
 gcloud projects add-iam-policy-binding  \
