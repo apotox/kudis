@@ -1,0 +1,6 @@
+# apiVersion: compute.googleapis.com
+# kind: ComputeAddress
+# metadata:
+#   name: kudis-ip
+# spec:
+#   location: global
