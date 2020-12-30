@@ -16,5 +16,3 @@ gcloud iam service-accounts add-iam-policy-binding $1@$2.iam.gserviceaccount.com
     --role="roles/iam.workloadIdentityUser"
 #now we can use k8s gke resources to create google cloud services such as public static-ip
 
-#create static ip from shell (configConnector) didnt work
-gcloud compute addresses create kudis-ip --global
