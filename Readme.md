@@ -7,6 +7,3 @@
 `>  chmod +x ./scripts/create-k8s-services.sh`
 
 `>  ./scripts/create-k8s-services.sh`
-
-
-run ./create-service-account.sh [a-service-name] [projectId]
