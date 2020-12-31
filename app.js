@@ -14,7 +14,7 @@ app.engine("html", require("ejs").renderFile);
 app.get("/", require("./routes").home);
 
 const server = app.listen(port, () => {
-  console.log("app started listning to ", port);
+  console.log(`${process.env.WELCOME_MSG}, App started listning to ${port}`);
 });
 
 const io = socketio(server, {
@@ -26,6 +26,6 @@ io.on("connection", (socket) => {
     console.log("recieving ", message, " from socketId: ", socket.id);
 
     //broadcast the message over all pods (instance's) clients
-    socket.broadcast.emit("message", `seen: ${message}`);
+    socket.broadcast.emit("message", `${socket.id}: ${message}`);
   });
 });

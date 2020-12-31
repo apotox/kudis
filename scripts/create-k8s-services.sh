@@ -2,7 +2,8 @@
 
 #create public static-ip from shell, this addr will be used as a dns record-a
 gcloud compute addresses create kudis-ip --global
-
+#set up a configuration object
+kubectl apply -f "$(pwd)/kubes/configmap.yaml"
 #create redis pods
 kubectl apply -f "$(pwd)/kubes/redis.yaml"
 #wait until redis pods get ready
