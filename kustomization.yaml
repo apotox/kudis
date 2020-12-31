@@ -1,0 +1,7 @@
+commonLabels:
+  project: kudis
+resources:
+- kubes/configmap.yaml
+- kubes/redis.yaml
+- kubes/ingress.yaml
+- kubes/kudis.yaml

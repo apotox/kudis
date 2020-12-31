@@ -1,7 +1,0 @@
-commonLabels:
-  project: kudis
-resources:
-  - configmap.yaml
-  - redis.yaml
-  - ingress.yaml
-  - kudis.yaml
