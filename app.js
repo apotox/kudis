@@ -14,7 +14,7 @@ app.engine("html", require("ejs").renderFile);
 app.get("/", require("./routes").home);
 
 const server = app.listen(port, () => {
-  console.log(`${process.env.WELCOME_MSG}, App started listning to ${port}`);
+  console.log(`${process.env.WELCOME_MSG}, App started listning to ${port} from Github action CD`);
 });
 
 const io = socketio(server, {

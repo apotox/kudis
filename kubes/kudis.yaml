@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: saphidev/kudis:2.0.1 #docker image from hub.docker.com/saphidev
+          image: gcr.io/PROJECT_ID/IMAGE:TAG #this will be replaced by Kustomize tool
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
