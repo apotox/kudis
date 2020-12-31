@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: saphidev/kudis:2.0.0 #docker image from hub.docker.com/saphidev
+          image: saphidev/kudis:2.0.1 #docker image from hub.docker.com/saphidev
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
