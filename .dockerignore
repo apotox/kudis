@@ -3,3 +3,5 @@ kubes
 scripts
 Readme.md
 service.account.json
+kustomization.yaml
+.github/*

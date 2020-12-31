@@ -9,15 +9,47 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   </head>
   <body>
-    <h2>CHAT <%= title %> from <%= pod %></h2>
+    <!--
+      simple chat app using socketio + redis-smq + GKE 
+      author: saphidev@gmail.com
+      createdAt: 31/12/2020
+    -->
+    <div class="container">
+      <h3><%= title %> from POD (<%= pod %>)</h3>
 
-    <form>
-      <label>message</label>
-      <input type="text" id="m" placeholder="message.." />
-      <button type="submit">send</button>
-    </form>
+      <form>
+        <label>message</label>
+        <input type="text" id="m" placeholder="message.." />
+        <button type="submit">send</button>
+      </form>
 
-    <ul id="list"></ul>
+      <ul id="list"></ul>
+    </div>
+
+    <style>
+      .container {
+        border: 1px solid #ccc;
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      button,
+      input {
+        padding: 0.2rem;
+      }
+
+      ul {
+        border: 1px solid #ccc;
+      }
+
+      h3 {
+        color: #858585;
+      }
+
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+    </style>
 
     <script>
       let list = [];

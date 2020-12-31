@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: kudis
 spec:
-  replicas: 2 #scale
+  replicas: 1 #scale
   selector:
     matchLabels:
       app: kudis
