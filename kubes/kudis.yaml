@@ -27,8 +27,8 @@ spec:
             - name: WELCOME_MSG
               valueFrom:
                 configMapKeyRef:
-                  name: my-config
-                  key: welcome-msg
+                  name: my-configs
+                  key: welcome_msg
 ---
 apiVersion: cloud.google.com/v1beta1
 kind: BackendConfig

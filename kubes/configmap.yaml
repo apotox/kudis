@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: my-configs
 data:
-  welcome-msg: "Hello Dev!"
+  welcome_msg: "Hello Dev!"
