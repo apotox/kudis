@@ -16,5 +16,5 @@ the workflow will build a docker container, publish it to your Google Container 
 
 happy editing!!
 
-
+[read more](https://safi-eddine-posts.herokuapp.com/2021-01-27_SocketIO---Redis-at-a-scalable-GKE-Cluster-with-Github-Workflows-844318f80ce.html)
 
